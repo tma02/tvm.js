@@ -1,0 +1,30 @@
+{
+  "vm": {
+    "numCells": 18,
+    "position": 17,
+    "state": "init"
+  },
+  "program": {
+    "init": {
+      "0": "_Lincrement"
+    },
+    "increment": {
+      "0": "1Lreset",
+      "1": "0Lcarry"
+    },
+    "reset": {
+      "0": "0Rreset",
+      "1": "1Rreset",
+      "_": "_Lincrement"
+    },
+    "zero": {
+      "0": "0Rzero",
+      "1": "0Rzero",
+      "_": "_Lincrement"
+    },
+    "carry": {
+      "0": "1Rzero",
+      "1": "1Lcarry"
+    }
+  }
+}
